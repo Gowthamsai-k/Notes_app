@@ -39,17 +39,17 @@ notes-app/
 ├── README.md
 └── requirements.txt # Python dependencies
 
-yaml
+
 Copy code
 
----
+
 
 ## Installation
 
 1. **Clone the repository**
 
-```bash
-git clone <your-repo-url>
+```
+git clone https://github.com/Gowthamsai-k/Notes_app
 cd notes-app
 Create a virtual environment
 
@@ -71,12 +71,12 @@ The app uses a database named notes_app and a collection named tasks.
 
 Run the Flask app
 
-bash
+
 Copy code
 python app.py
 Open the app in your browser
 
-cpp
+
 Copy code
 http://127.0.0.1:5000/
 Usage
@@ -95,11 +95,6 @@ PyMongo
 
 Bootstrap 5 (local files or CDN)
 
-License
-This project is licensed under the MIT License.
-
-Screenshots
-(Optional: Add screenshots of the app here if needed)
 
 Author
 Gowtham K
