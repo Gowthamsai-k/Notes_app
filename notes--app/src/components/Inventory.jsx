@@ -1,9 +1,9 @@
 import {useState , useEffect , createContext, useContext} from 'react'
+import {medContext} from '../App.jsx'
 
-export const medContext = createContext()
 export default function Inventory()
 {
-    const [med , setMed] = useState([])
+   const {med , setMed} = useContext(medContext)
     const [form , setForm] = useState({
         id:Date.now(),
         name : "" ,
@@ -22,9 +22,7 @@ export default function Inventory()
             desc: ""
         })
     }
-    const handleDelete = (id) =>{
-        setMed(med.filter((item) => item.id != id))
-    }
+ 
 
    
 
@@ -55,7 +53,7 @@ export default function Inventory()
             <button type = "submit">Add Medicine</button>
 
         </form>
-        <div>
+        {/* <div>
             {
                 med.map((item , index) => (
                     <ol key = {index}>
@@ -66,7 +64,7 @@ export default function Inventory()
                     </ol>
                 ))
             }
-        </div>
+        </div> */}
 
         </medContext.Provider>
     )
